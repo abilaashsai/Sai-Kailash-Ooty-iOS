@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AA2A0099ED597AE5D2A9F1B /* Pods_SaiKailashUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1663920FA0794AA4FB716C05 /* Pods_SaiKailashUITests.framework */; };
+		E80282121EEAF447000FC80E /* sai_blessings.png in Resources */ = {isa = PBXBuildFile; fileRef = E80282111EEAF447000FC80E /* sai_blessings.png */; };
+		E817F54D1EE99A7B00870C6C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E817F54C1EE99A7B00870C6C /* GoogleService-Info.plist */; };
+		E817F54E1EE99A7B00870C6C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E817F54C1EE99A7B00870C6C /* GoogleService-Info.plist */; };
+		E817F54F1EE99A7B00870C6C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E817F54C1EE99A7B00870C6C /* GoogleService-Info.plist */; };
+		E82D45A41EEC60F9005033F6 /* SampleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82D45A31EEC60F9005033F6 /* SampleTableViewController.swift */; };
 		E851B0841EE7243E00943F1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E851B0831EE7243E00943F1F /* AppDelegate.swift */; };
 		E851B0861EE7243E00943F1F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E851B0851EE7243E00943F1F /* FirstViewController.swift */; };
 		E851B0881EE7243E00943F1F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E851B0871EE7243E00943F1F /* SecondViewController.swift */; };
@@ -15,6 +21,8 @@
 		E851B0901EE7243E00943F1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E851B08E1EE7243E00943F1F /* LaunchScreen.storyboard */; };
 		E851B09B1EE7243F00943F1F /* SaiKailashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E851B09A1EE7243F00943F1F /* SaiKailashTests.swift */; };
 		E851B0A61EE7243F00943F1F /* SaiKailashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E851B0A51EE7243F00943F1F /* SaiKailashUITests.swift */; };
+		E8A016BE157CA13422294158 /* Pods_SaiKailashTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF445F5F4A81FAE072F656E /* Pods_SaiKailashTests.framework */; };
+		FE254DEC056FAC7F09AB678F /* Pods_SaiKailash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D27C09AB4C064468DFF2083 /* Pods_SaiKailash.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +43,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0996942CDF39372E6B48160C /* Pods-SaiKailash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaiKailash.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SaiKailash/Pods-SaiKailash.debug.xcconfig"; sourceTree = "<group>"; };
+		1663920FA0794AA4FB716C05 /* Pods_SaiKailashUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaiKailashUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5624962EB16451AA089D6135 /* Pods-SaiKailashTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaiKailashTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SaiKailashTests/Pods-SaiKailashTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5D426E11119954689D9926D2 /* Pods-SaiKailashTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaiKailashTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SaiKailashTests/Pods-SaiKailashTests.release.xcconfig"; sourceTree = "<group>"; };
+		6D27C09AB4C064468DFF2083 /* Pods_SaiKailash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaiKailash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EF445F5F4A81FAE072F656E /* Pods_SaiKailashTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SaiKailashTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B029D3BEFBC5CB3BCC35125 /* Pods-SaiKailashUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaiKailashUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SaiKailashUITests/Pods-SaiKailashUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9E1126544C3D36965899916C /* Pods-SaiKailash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaiKailash.release.xcconfig"; path = "Pods/Target Support Files/Pods-SaiKailash/Pods-SaiKailash.release.xcconfig"; sourceTree = "<group>"; };
+		DF5B93D6C9E0EE38B81FC610 /* Pods-SaiKailashUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaiKailashUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SaiKailashUITests/Pods-SaiKailashUITests.release.xcconfig"; sourceTree = "<group>"; };
+		E80282111EEAF447000FC80E /* sai_blessings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sai_blessings.png; path = ../../../../Documents/sai_blessings.png; sourceTree = "<group>"; };
+		E817F54C1EE99A7B00870C6C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E82D45A31EEC60F9005033F6 /* SampleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleTableViewController.swift; sourceTree = "<group>"; };
 		E851B0801EE7243E00943F1F /* SaiKailash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaiKailash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E851B0831EE7243E00943F1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E851B0851EE7243E00943F1F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE254DEC056FAC7F09AB678F /* Pods_SaiKailash.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E8A016BE157CA13422294158 /* Pods_SaiKailashTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +92,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AA2A0099ED597AE5D2A9F1B /* Pods_SaiKailashUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C4C8EC5A1B6A0F2FB2D6572 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D27C09AB4C064468DFF2083 /* Pods_SaiKailash.framework */,
+				6EF445F5F4A81FAE072F656E /* Pods_SaiKailashTests.framework */,
+				1663920FA0794AA4FB716C05 /* Pods_SaiKailashUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6CE8B09C9C4656D32B807796 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0996942CDF39372E6B48160C /* Pods-SaiKailash.debug.xcconfig */,
+				9E1126544C3D36965899916C /* Pods-SaiKailash.release.xcconfig */,
+				5624962EB16451AA089D6135 /* Pods-SaiKailashTests.debug.xcconfig */,
+				5D426E11119954689D9926D2 /* Pods-SaiKailashTests.release.xcconfig */,
+				9B029D3BEFBC5CB3BCC35125 /* Pods-SaiKailashUITests.debug.xcconfig */,
+				DF5B93D6C9E0EE38B81FC610 /* Pods-SaiKailashUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E851B0771EE7243E00943F1F = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +129,8 @@
 				E851B0991EE7243F00943F1F /* SaiKailashTests */,
 				E851B0A41EE7243F00943F1F /* SaiKailashUITests */,
 				E851B0811EE7243E00943F1F /* Products */,
+				6CE8B09C9C4656D32B807796 /* Pods */,
+				6C4C8EC5A1B6A0F2FB2D6572 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +147,16 @@
 		E851B0821EE7243E00943F1F /* SaiKailash */ = {
 			isa = PBXGroup;
 			children = (
+				E80282111EEAF447000FC80E /* sai_blessings.png */,
 				E851B0831EE7243E00943F1F /* AppDelegate.swift */,
 				E851B0851EE7243E00943F1F /* FirstViewController.swift */,
 				E851B0871EE7243E00943F1F /* SecondViewController.swift */,
 				E851B0891EE7243E00943F1F /* Main.storyboard */,
 				E851B08C1EE7243E00943F1F /* Assets.xcassets */,
 				E851B08E1EE7243E00943F1F /* LaunchScreen.storyboard */,
+				E817F54C1EE99A7B00870C6C /* GoogleService-Info.plist */,
 				E851B0911EE7243E00943F1F /* Info.plist */,
+				E82D45A31EEC60F9005033F6 /* SampleTableViewController.swift */,
 			);
 			path = SaiKailash;
 			sourceTree = "<group>";
@@ -135,9 +186,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E851B0AA1EE7243F00943F1F /* Build configuration list for PBXNativeTarget "SaiKailash" */;
 			buildPhases = (
+				4C2247F44AE693EC3B40F452 /* [CP] Check Pods Manifest.lock */,
 				E851B07C1EE7243E00943F1F /* Sources */,
 				E851B07D1EE7243E00943F1F /* Frameworks */,
 				E851B07E1EE7243E00943F1F /* Resources */,
+				A99380B66FA5F745C12A28C6 /* [CP] Embed Pods Frameworks */,
+				F9D9770F3B0AD20E2D7D38F5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +206,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E851B0AD1EE7243F00943F1F /* Build configuration list for PBXNativeTarget "SaiKailashTests" */;
 			buildPhases = (
+				33C55C4B67958054717E4AE5 /* [CP] Check Pods Manifest.lock */,
 				E851B0921EE7243E00943F1F /* Sources */,
 				E851B0931EE7243E00943F1F /* Frameworks */,
 				E851B0941EE7243E00943F1F /* Resources */,
+				7A857AD10A5F88F75A329698 /* [CP] Embed Pods Frameworks */,
+				CBF87FB38EE5E61EA4C9D3B2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E851B0B01EE7243F00943F1F /* Build configuration list for PBXNativeTarget "SaiKailashUITests" */;
 			buildPhases = (
+				0A43ACCF95F52BBCFD502079 /* [CP] Check Pods Manifest.lock */,
 				E851B09D1EE7243F00943F1F /* Sources */,
 				E851B09E1EE7243F00943F1F /* Frameworks */,
 				E851B09F1EE7243F00943F1F /* Resources */,
+				95C0EEF8719E5B46F48FD820 /* [CP] Embed Pods Frameworks */,
+				75F264BF24AA0CC98F0B5A39 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -239,8 +299,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E851B0901EE7243E00943F1F /* LaunchScreen.storyboard in Resources */,
+				E817F54D1EE99A7B00870C6C /* GoogleService-Info.plist in Resources */,
 				E851B08D1EE7243E00943F1F /* Assets.xcassets in Resources */,
 				E851B08B1EE7243E00943F1F /* Main.storyboard in Resources */,
+				E80282121EEAF447000FC80E /* sai_blessings.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +310,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E817F54E1EE99A7B00870C6C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,16 +318,156 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E817F54F1EE99A7B00870C6C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A43ACCF95F52BBCFD502079 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		33C55C4B67958054717E4AE5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4C2247F44AE693EC3B40F452 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		75F264BF24AA0CC98F0B5A39 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SaiKailashUITests/Pods-SaiKailashUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7A857AD10A5F88F75A329698 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SaiKailashTests/Pods-SaiKailashTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95C0EEF8719E5B46F48FD820 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SaiKailashUITests/Pods-SaiKailashUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A99380B66FA5F745C12A28C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SaiKailash/Pods-SaiKailash-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBF87FB38EE5E61EA4C9D3B2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SaiKailashTests/Pods-SaiKailashTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9D9770F3B0AD20E2D7D38F5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SaiKailash/Pods-SaiKailash-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E851B07C1EE7243E00943F1F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E82D45A41EEC60F9005033F6 /* SampleTableViewController.swift in Sources */,
 				E851B0881EE7243E00943F1F /* SecondViewController.swift in Sources */,
 				E851B0841EE7243E00943F1F /* AppDelegate.swift in Sources */,
 				E851B0861EE7243E00943F1F /* FirstViewController.swift in Sources */,
@@ -419,6 +622,7 @@
 		};
 		E851B0AB1EE7243F00943F1F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0996942CDF39372E6B48160C /* Pods-SaiKailash.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 648PCQCDMR;
@@ -432,6 +636,7 @@
 		};
 		E851B0AC1EE7243F00943F1F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E1126544C3D36965899916C /* Pods-SaiKailash.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 648PCQCDMR;
@@ -445,6 +650,7 @@
 		};
 		E851B0AE1EE7243F00943F1F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5624962EB16451AA089D6135 /* Pods-SaiKailashTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -460,6 +666,7 @@
 		};
 		E851B0AF1EE7243F00943F1F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D426E11119954689D9926D2 /* Pods-SaiKailashTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -475,6 +682,7 @@
 		};
 		E851B0B11EE7243F00943F1F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B029D3BEFBC5CB3BCC35125 /* Pods-SaiKailashUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 648PCQCDMR;
@@ -489,6 +697,7 @@
 		};
 		E851B0B21EE7243F00943F1F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF5B93D6C9E0EE38B81FC610 /* Pods-SaiKailashUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 648PCQCDMR;
@@ -520,6 +729,7 @@
 				E851B0AC1EE7243F00943F1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E851B0AD1EE7243F00943F1F /* Build configuration list for PBXNativeTarget "SaiKailashTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +738,7 @@
 				E851B0AF1EE7243F00943F1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E851B0B01EE7243F00943F1F /* Build configuration list for PBXNativeTarget "SaiKailashUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +747,7 @@
 				E851B0B21EE7243F00943F1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
