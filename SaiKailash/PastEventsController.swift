@@ -1,19 +1,18 @@
 //
-//  SecondViewController.swift
+//  PastViewController.swift
 //  SaiKailash
 //
-//  Created by abilashr on 6/6/17.
+//  Created by abilashr on 6/10/17.
 //  Copyright © 2017 abilashr. All rights reserved.
 //
 
 import UIKit
 import FirebaseDatabase
 
-class SecondViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
-    
+class PastEventsController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+
+
     @IBOutlet var tableView: UITableView!
-    
     var ref: DatabaseReference!
     
     
@@ -43,6 +42,7 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
                             for day in (month as! DataSnapshot).children{
                                 let dateCheck = Int((day as! DataSnapshot).key )
                                 if((monthCheck! == currentMonth! && dateCheck! >= currentDate!) || monthCheck! > currentMonth!){
+                                }else{
                                     let dayObject = (day as! DataSnapshot).value as? NSDictionary
                                     let date = dayObject?["date"] as! String
                                     let message = dayObject?["message"] as! String
@@ -50,8 +50,17 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
                                 }
                             }
                         }
+                        if(monthCheck! < currentMonth!){
+                            for day in (month as! DataSnapshot).children{
+                                let dayObject = (day as! DataSnapshot).value as? NSDictionary
+                                let date = dayObject?["date"] as! String
+                                let message = dayObject?["message"] as! String
+                                self.list.append(date+"   "+message)
+                            }
+                        }
                     }
                 }
+                self.list.reverse()
                 self.tableView.reloadData()
                 
             }
@@ -66,10 +75,6 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
         
     }
     
-    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return(list.count)
-    }
-    
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
         let cell:UITableViewCell = tableView.cellForRow(at: indexPath)!
         cell.textLabel?.textColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1.0)
@@ -78,6 +83,10 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
     public func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath){
         let cell:UITableViewCell = tableView.cellForRow(at: indexPath)!
         cell.textLabel?.textColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1.0)
+    }
+    
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
+        return(list.count)
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
@@ -89,4 +98,3 @@ class SecondViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
 }
-

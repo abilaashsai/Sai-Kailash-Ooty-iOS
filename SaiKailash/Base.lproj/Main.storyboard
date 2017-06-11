@@ -78,7 +78,7 @@
         <!--Item-->
         <scene sceneID="o9I-Vk-tMt">
             <objects>
-                <viewController id="fgv-7s-dE2" customClass="SampleTableViewController" customModule="SaiKailash" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fgv-7s-dE2" customClass="PastEventsController" customModule="SaiKailash" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="R2J-57-FJK"/>
                         <viewControllerLayoutGuide type="bottom" id="KgP-pS-pOs"/>
@@ -140,7 +140,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="QdB-tn-TGt"/>
                     <connections>
-                        <outlet property="tableView" destination="csF-Dr-GQO" id="0jw-qE-M6r"/>
+                        <outlet property="tableView" destination="csF-Dr-GQO" id="HDJ-Og-CBR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a4A-aY-0jZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -170,7 +170,7 @@
         <!--Item-->
         <scene sceneID="ND8-uU-m5z">
             <objects>
-                <viewController id="LmT-wP-EdV" customClass="SecondViewController" customModule="SaiKailash" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="LmT-wP-EdV" customClass="UpcomingEventsController" customModule="SaiKailash" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WYO-Jn-bn5"/>
                         <viewControllerLayoutGuide type="bottom" id="93g-vN-Xto"/>
@@ -232,7 +232,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="ulq-YB-qN8"/>
                     <connections>
-                        <outlet property="tableView" destination="QMS-wv-NCh" id="aHf-pU-hr6"/>
+                        <outlet property="tableView" destination="QMS-wv-NCh" id="8x8-Kn-aMQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KRY-Io-s54" userLabel="First Responder" sceneMemberID="firstResponder"/>

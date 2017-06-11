@@ -12,10 +12,10 @@
 		E817F54D1EE99A7B00870C6C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E817F54C1EE99A7B00870C6C /* GoogleService-Info.plist */; };
 		E817F54E1EE99A7B00870C6C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E817F54C1EE99A7B00870C6C /* GoogleService-Info.plist */; };
 		E817F54F1EE99A7B00870C6C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E817F54C1EE99A7B00870C6C /* GoogleService-Info.plist */; };
-		E82D45A41EEC60F9005033F6 /* SampleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82D45A31EEC60F9005033F6 /* SampleTableViewController.swift */; };
+		E82D45A41EEC60F9005033F6 /* PastEventsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82D45A31EEC60F9005033F6 /* PastEventsController.swift */; };
 		E851B0841EE7243E00943F1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E851B0831EE7243E00943F1F /* AppDelegate.swift */; };
 		E851B0861EE7243E00943F1F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E851B0851EE7243E00943F1F /* FirstViewController.swift */; };
-		E851B0881EE7243E00943F1F /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E851B0871EE7243E00943F1F /* SecondViewController.swift */; };
+		E851B0881EE7243E00943F1F /* UpcomingEventsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E851B0871EE7243E00943F1F /* UpcomingEventsController.swift */; };
 		E851B08B1EE7243E00943F1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E851B0891EE7243E00943F1F /* Main.storyboard */; };
 		E851B08D1EE7243E00943F1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E851B08C1EE7243E00943F1F /* Assets.xcassets */; };
 		E851B0901EE7243E00943F1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E851B08E1EE7243E00943F1F /* LaunchScreen.storyboard */; };
@@ -54,11 +54,11 @@
 		DF5B93D6C9E0EE38B81FC610 /* Pods-SaiKailashUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaiKailashUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SaiKailashUITests/Pods-SaiKailashUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E80282111EEAF447000FC80E /* sai_blessings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sai_blessings.png; path = ../../../../Documents/sai_blessings.png; sourceTree = "<group>"; };
 		E817F54C1EE99A7B00870C6C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		E82D45A31EEC60F9005033F6 /* SampleTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleTableViewController.swift; sourceTree = "<group>"; };
+		E82D45A31EEC60F9005033F6 /* PastEventsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastEventsController.swift; sourceTree = "<group>"; };
 		E851B0801EE7243E00943F1F /* SaiKailash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaiKailash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E851B0831EE7243E00943F1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E851B0851EE7243E00943F1F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		E851B0871EE7243E00943F1F /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		E851B0871EE7243E00943F1F /* UpcomingEventsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEventsController.swift; sourceTree = "<group>"; };
 		E851B08A1EE7243E00943F1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E851B08C1EE7243E00943F1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E851B08F1EE7243E00943F1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -150,13 +150,13 @@
 				E80282111EEAF447000FC80E /* sai_blessings.png */,
 				E851B0831EE7243E00943F1F /* AppDelegate.swift */,
 				E851B0851EE7243E00943F1F /* FirstViewController.swift */,
-				E851B0871EE7243E00943F1F /* SecondViewController.swift */,
+				E851B0871EE7243E00943F1F /* UpcomingEventsController.swift */,
 				E851B0891EE7243E00943F1F /* Main.storyboard */,
 				E851B08C1EE7243E00943F1F /* Assets.xcassets */,
 				E851B08E1EE7243E00943F1F /* LaunchScreen.storyboard */,
 				E817F54C1EE99A7B00870C6C /* GoogleService-Info.plist */,
 				E851B0911EE7243E00943F1F /* Info.plist */,
-				E82D45A31EEC60F9005033F6 /* SampleTableViewController.swift */,
+				E82D45A31EEC60F9005033F6 /* PastEventsController.swift */,
 			);
 			path = SaiKailash;
 			sourceTree = "<group>";
@@ -467,8 +467,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E82D45A41EEC60F9005033F6 /* SampleTableViewController.swift in Sources */,
-				E851B0881EE7243E00943F1F /* SecondViewController.swift in Sources */,
+				E82D45A41EEC60F9005033F6 /* PastEventsController.swift in Sources */,
+				E851B0881EE7243E00943F1F /* UpcomingEventsController.swift in Sources */,
 				E851B0841EE7243E00943F1F /* AppDelegate.swift in Sources */,
 				E851B0861EE7243E00943F1F /* FirstViewController.swift in Sources */,
 			);
