@@ -17,9 +17,11 @@ class PastEventsController: UIViewController, UITableViewDataSource, UITableView
     
     
     var list = [String]()
+    var current = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        list.append("Loading ...")
         ref = Database.database().reference()
         
         let date = Date()
@@ -46,7 +48,7 @@ class PastEventsController: UIViewController, UITableViewDataSource, UITableView
                                     let dayObject = (day as! DataSnapshot).value as? NSDictionary
                                     let date = dayObject?["date"] as! String
                                     let message = dayObject?["message"] as! String
-                                    self.list.append(date+"   "+message)
+                                    self.current.append(date+"   "+message)
                                 }
                             }
                         }
@@ -55,11 +57,12 @@ class PastEventsController: UIViewController, UITableViewDataSource, UITableView
                                 let dayObject = (day as! DataSnapshot).value as? NSDictionary
                                 let date = dayObject?["date"] as! String
                                 let message = dayObject?["message"] as! String
-                                self.list.append(date+"   "+message)
+                                self.current.append(date+"   "+message)
                             }
                         }
                     }
                 }
+                self.list = self.current
                 self.list.reverse()
                 self.tableView.reloadData()
                 

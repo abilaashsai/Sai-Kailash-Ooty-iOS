@@ -17,9 +17,11 @@ class UpcomingEventsController: UIViewController, UITableViewDataSource, UITable
     
     
     var list = [String]()
+    var current = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.list.append("Loading ...")
         ref = Database.database().reference()
         
         let date = Date()
@@ -45,14 +47,14 @@ class UpcomingEventsController: UIViewController, UITableViewDataSource, UITable
                                     let dayObject = (day as! DataSnapshot).value as? NSDictionary
                                     let date = dayObject?["date"] as! String
                                     let message = dayObject?["message"] as! String
-                                    self.list.append(date+"   "+message)
+                                    self.current.append(date+"   "+message)
                                 }
                             }
                         }
                     }
                 }
+                self.list = self.current
                 self.tableView.reloadData()
-                
             }
             
         }) { (error) in
