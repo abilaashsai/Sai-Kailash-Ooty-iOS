@@ -8,10 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2AA2A0099ED597AE5D2A9F1B /* Pods_SaiKailashUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1663920FA0794AA4FB716C05 /* Pods_SaiKailashUITests.framework */; };
-		E80282121EEAF447000FC80E /* sai_blessings.png in Resources */ = {isa = PBXBuildFile; fileRef = E80282111EEAF447000FC80E /* sai_blessings.png */; };
-		E817F54D1EE99A7B00870C6C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E817F54C1EE99A7B00870C6C /* GoogleService-Info.plist */; };
-		E817F54E1EE99A7B00870C6C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E817F54C1EE99A7B00870C6C /* GoogleService-Info.plist */; };
-		E817F54F1EE99A7B00870C6C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E817F54C1EE99A7B00870C6C /* GoogleService-Info.plist */; };
 		E82D45A41EEC60F9005033F6 /* PastEventsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E82D45A31EEC60F9005033F6 /* PastEventsController.swift */; };
 		E851B0841EE7243E00943F1F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E851B0831EE7243E00943F1F /* AppDelegate.swift */; };
 		E851B0861EE7243E00943F1F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E851B0851EE7243E00943F1F /* FirstViewController.swift */; };
@@ -21,6 +17,8 @@
 		E851B0901EE7243E00943F1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E851B08E1EE7243E00943F1F /* LaunchScreen.storyboard */; };
 		E851B09B1EE7243F00943F1F /* SaiKailashTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E851B09A1EE7243F00943F1F /* SaiKailashTests.swift */; };
 		E851B0A61EE7243F00943F1F /* SaiKailashUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E851B0A51EE7243F00943F1F /* SaiKailashUITests.swift */; };
+		E85AF7681EFDA8250024E0EE /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E85AF7671EFDA8250024E0EE /* GoogleService-Info.plist */; };
+		E85AF76A1EFDA8DC0024E0EE /* sai_blessings.png in Resources */ = {isa = PBXBuildFile; fileRef = E85AF7691EFDA8DC0024E0EE /* sai_blessings.png */; };
 		E8A016BE157CA13422294158 /* Pods_SaiKailashTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF445F5F4A81FAE072F656E /* Pods_SaiKailashTests.framework */; };
 		FE254DEC056FAC7F09AB678F /* Pods_SaiKailash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D27C09AB4C064468DFF2083 /* Pods_SaiKailash.framework */; };
 /* End PBXBuildFile section */
@@ -52,8 +50,6 @@
 		9B029D3BEFBC5CB3BCC35125 /* Pods-SaiKailashUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaiKailashUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SaiKailashUITests/Pods-SaiKailashUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9E1126544C3D36965899916C /* Pods-SaiKailash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaiKailash.release.xcconfig"; path = "Pods/Target Support Files/Pods-SaiKailash/Pods-SaiKailash.release.xcconfig"; sourceTree = "<group>"; };
 		DF5B93D6C9E0EE38B81FC610 /* Pods-SaiKailashUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SaiKailashUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SaiKailashUITests/Pods-SaiKailashUITests.release.xcconfig"; sourceTree = "<group>"; };
-		E80282111EEAF447000FC80E /* sai_blessings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sai_blessings.png; path = ../../../../Documents/sai_blessings.png; sourceTree = "<group>"; };
-		E817F54C1EE99A7B00870C6C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E82D45A31EEC60F9005033F6 /* PastEventsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PastEventsController.swift; sourceTree = "<group>"; };
 		E851B0801EE7243E00943F1F /* SaiKailash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SaiKailash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E851B0831EE7243E00943F1F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +65,8 @@
 		E851B0A11EE7243F00943F1F /* SaiKailashUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SaiKailashUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E851B0A51EE7243F00943F1F /* SaiKailashUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaiKailashUITests.swift; sourceTree = "<group>"; };
 		E851B0A71EE7243F00943F1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E85AF7671EFDA8250024E0EE /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E85AF7691EFDA8DC0024E0EE /* sai_blessings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = sai_blessings.png; path = "../../../../Documents/sai kailash photos/sai_blessings.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,14 +145,14 @@
 		E851B0821EE7243E00943F1F /* SaiKailash */ = {
 			isa = PBXGroup;
 			children = (
-				E80282111EEAF447000FC80E /* sai_blessings.png */,
+				E85AF7691EFDA8DC0024E0EE /* sai_blessings.png */,
+				E85AF7671EFDA8250024E0EE /* GoogleService-Info.plist */,
 				E851B0831EE7243E00943F1F /* AppDelegate.swift */,
 				E851B0851EE7243E00943F1F /* FirstViewController.swift */,
 				E851B0871EE7243E00943F1F /* UpcomingEventsController.swift */,
 				E851B0891EE7243E00943F1F /* Main.storyboard */,
 				E851B08C1EE7243E00943F1F /* Assets.xcassets */,
 				E851B08E1EE7243E00943F1F /* LaunchScreen.storyboard */,
-				E817F54C1EE99A7B00870C6C /* GoogleService-Info.plist */,
 				E851B0911EE7243E00943F1F /* Info.plist */,
 				E82D45A31EEC60F9005033F6 /* PastEventsController.swift */,
 			);
@@ -299,10 +297,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E851B0901EE7243E00943F1F /* LaunchScreen.storyboard in Resources */,
-				E817F54D1EE99A7B00870C6C /* GoogleService-Info.plist in Resources */,
 				E851B08D1EE7243E00943F1F /* Assets.xcassets in Resources */,
+				E85AF7681EFDA8250024E0EE /* GoogleService-Info.plist in Resources */,
 				E851B08B1EE7243E00943F1F /* Main.storyboard in Resources */,
-				E80282121EEAF447000FC80E /* sai_blessings.png in Resources */,
+				E85AF76A1EFDA8DC0024E0EE /* sai_blessings.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,7 +308,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E817F54E1EE99A7B00870C6C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,7 +315,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E817F54F1EE99A7B00870C6C /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,7 +624,7 @@
 				DEVELOPMENT_TEAM = 648PCQCDMR;
 				INFOPLIST_FILE = SaiKailash/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = abilash.SaiKailash;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saikailas.ooty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -642,7 +638,7 @@
 				DEVELOPMENT_TEAM = 648PCQCDMR;
 				INFOPLIST_FILE = SaiKailash/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = abilash.SaiKailash;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saikailas.ooty;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
