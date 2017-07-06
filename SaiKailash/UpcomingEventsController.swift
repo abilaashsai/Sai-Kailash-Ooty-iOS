@@ -10,10 +10,18 @@ import UIKit
 import FirebaseDatabase
 
 class UpcomingEventsController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
+    
     @IBOutlet var tableView: UITableView!
+    var dateArr = [String]()
+    var typeArr = [String]()
+    var messageArr = [String]()
+    var selectionArr = [String]()
     
     var ref: DatabaseReference!
+    var selectedEvent: String!
+    var selectedType: String!
+    var selectedMessage: String!
+    var selectionString: String!
     
     
     var list = [String]()
@@ -47,6 +55,11 @@ class UpcomingEventsController: UIViewController, UITableViewDataSource, UITable
                                     let dayObject = (day as! DataSnapshot).value as? NSDictionary
                                     let date = dayObject?["date"] as! String
                                     let message = dayObject?["message"] as! String
+                                    let type = dayObject?["type"] as! String
+                                    self.typeArr.append(type)
+                                    self.messageArr.append(message)
+                                    self.dateArr.append(date)
+                                    self.selectionArr.append(String(yearCheck!)+"/"+String(monthCheck!)+"/"+String(dateCheck!))
                                     self.current.append(date+"   "+message)
                                 }
                             }
@@ -72,8 +85,29 @@ class UpcomingEventsController: UIViewController, UITableViewDataSource, UITable
     }
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        if(dateArr.count == 0){
+            return
+        }
+        self.selectedEvent = self.dateArr[indexPath.row]
+        self.selectedType = self.typeArr[indexPath.row]
+        self.selectedMessage = self.messageArr[indexPath.row]
+        self.selectionString = self.selectionArr[indexPath.row]
+        
         let cell:UITableViewCell = tableView.cellForRow(at: indexPath)!
         cell.textLabel?.textColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1.0)
+
+        performSegue(withIdentifier: "eventToDetail", sender: self)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "eventToDetail") {
+            
+            let eventDetailController = (segue.destination as! EventDetailController)
+            eventDetailController.selectedEvent = self.selectedEvent
+            eventDetailController.selectedType = self.selectedType
+            eventDetailController.selectedMessage = self.selectedMessage
+            eventDetailController.selectionString = self.selectionString
+            
+        }
     }
     
     public func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath){

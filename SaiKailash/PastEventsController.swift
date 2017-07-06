@@ -1,6 +1,6 @@
 //
 //  PastViewController.swift
-//  SaiKailash
+//  SaiKailas
 //
 //  Created by abilashr on 6/10/17.
 //  Copyright © 2017 abilashr. All rights reserved.
@@ -13,7 +13,18 @@ class PastEventsController: UIViewController, UITableViewDataSource, UITableView
 
 
     @IBOutlet var tableView: UITableView!
+    
+    var dateArr = [String]()
+    var typeArr = [String]()
+    var messageArr = [String]()
+    var selectionArr = [String]()
+    
+    var selectedType: String!
+    var selectedMessage: String!
+    var selectionString: String!
+    
     var ref: DatabaseReference!
+    var selectedEvent: String!
     
     
     var list = [String]()
@@ -48,15 +59,30 @@ class PastEventsController: UIViewController, UITableViewDataSource, UITableView
                                     let dayObject = (day as! DataSnapshot).value as? NSDictionary
                                     let date = dayObject?["date"] as! String
                                     let message = dayObject?["message"] as! String
+                                    let type = dayObject?["type"] as! String
+                                    self.typeArr.append(type)
+                                    self.messageArr.append(message)
+                                    self.dateArr.append(date)
+                                    self.selectionArr.append(String(yearCheck!)+"/"+String(monthCheck!)+"/"+String(dateCheck!))
                                     self.current.append(date+"   "+message)
+                                    
                                 }
                             }
                         }
                         if(monthCheck! < currentMonth!){
                             for day in (month as! DataSnapshot).children{
                                 let dayObject = (day as! DataSnapshot).value as? NSDictionary
+                                let dateCheck = Int((day as! DataSnapshot).key )
                                 let date = dayObject?["date"] as! String
                                 let message = dayObject?["message"] as! String
+                                var type : String = "other"
+                                if((dayObject?["type"] as? String) != nil){
+                                type = (dayObject?["type"] as? String)!
+                                }
+                                self.typeArr.append(type)
+                                self.messageArr.append(message)
+                                self.dateArr.append(date)
+                                self.selectionArr.append(String(yearCheck!)+"/"+String(monthCheck!)+"/"+String(dateCheck!))
                                 self.current.append(date+"   "+message)
                             }
                         }
@@ -79,13 +105,35 @@ class PastEventsController: UIViewController, UITableViewDataSource, UITableView
     }
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath){
+        if(dateArr.count == 0){
+            return
+        }
+        self.selectedEvent = self.dateArr[self.dateArr.count-(indexPath.row+1)]
+        self.selectedType = self.typeArr[self.dateArr.count-(indexPath.row+1)]
+        self.selectedMessage = self.messageArr[self.dateArr.count-(indexPath.row+1)]
+        self.selectionString = self.selectionArr[self.dateArr.count-(indexPath.row+1)]
+        
         let cell:UITableViewCell = tableView.cellForRow(at: indexPath)!
         cell.textLabel?.textColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1.0)
+        performSegue(withIdentifier: "eventToDetail", sender: self)
+
     }
     
     public func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath){
         let cell:UITableViewCell = tableView.cellForRow(at: indexPath)!
         cell.textLabel?.textColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 1.0)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "eventToDetail") {
+            
+            let eventDetailController = (segue.destination as! EventDetailController)
+            eventDetailController.selectedEvent = self.selectedEvent
+            eventDetailController.selectedType = self.selectedType
+            eventDetailController.selectedMessage = self.selectedMessage
+            eventDetailController.selectionString = self.selectionString
+            
+        }
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
